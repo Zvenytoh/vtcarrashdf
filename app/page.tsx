@@ -28,6 +28,7 @@ const faqs = [
 
 export default function Home() {
   return <main>
+    <style>{`.service-1 { background-image:linear-gradient(115deg,rgba(10,11,12,.15),rgba(10,11,12,.62)),url('/peugeot-508-editorial.png'); background-position:72% center; } .service-2 { background-image:linear-gradient(115deg,rgba(10,11,12,.22),rgba(10,11,12,.72)),url('https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&w=1400&q=85'); background-position:center; } .service-3 { background-image:linear-gradient(115deg,rgba(10,11,12,.20),rgba(10,11,12,.74)),url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=85'); background-position:center; } .service-4 { background-image:linear-gradient(115deg,rgba(10,11,12,.25),rgba(10,11,12,.74)),url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1400&q=85'); background-position:center; }`}</style>
     <header className="site-header">
       <a className="brand" href="#accueil" aria-label="VTC ARRAS HDF, accueil"><b>VTC</b> ARRAS HDF</a>
       <nav aria-label="Navigation principale"><a href="#services">Services</a><a href="#transferts">Transferts</a><a href="#pro">Entreprises</a><a href="#apropos">À propos</a><a href="#contact">Contact</a></nav>
