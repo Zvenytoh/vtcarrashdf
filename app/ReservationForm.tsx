@@ -7,7 +7,8 @@ export function ReservationForm() {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const data = new FormData(form);
     setStatus("sending");
 
     try {
@@ -17,7 +18,7 @@ export function ReservationForm() {
         body: JSON.stringify(Object.fromEntries(data)),
       });
       if (!response.ok) throw new Error("Booking request failed");
-      event.currentTarget.reset();
+      form.reset();
       setStatus("success");
     } catch {
       setStatus("error");
@@ -30,7 +31,7 @@ export function ReservationForm() {
     <label><span>Date</span><input name="date" type="date" required /></label>
     <label><span>Heure</span><input name="heure" type="time" required /></label>
     <input className="honeypot" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
-    <button className="button button-light" type="submit" disabled={status === "sending"}>{status === "sending" ? "Envoi en cours…" : <>Demander mon trajet <i>↗</i></>}</button>
+    <button className="button button-light" type="submit" disabled={status === "sending"}>{status === "sending" ? "Envoi en cours…" : <>Demander mon trajet <i aria-hidden="true" /></>}</button>
     {status === "success" && <p className="form-note" role="status">Votre demande est envoyée. Nous vous recontacterons rapidement.</p>}
     {status === "error" && <p className="form-note form-error" role="alert">L’envoi n’a pas abouti. Appelez-nous au 06 82 54 58 49.</p>}
   </form>;

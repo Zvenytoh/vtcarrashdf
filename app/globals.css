@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./service-overrides.css";
 
 :root { --ink:#0b0c0d; --graphite:#141517; --ivory:#f2f0eb; --paper:#f7f7f4; --muted:#a7a7a4; --accent:#b7aa92; --line:rgba(247,247,244,.15); }
 * { box-sizing:border-box; }
