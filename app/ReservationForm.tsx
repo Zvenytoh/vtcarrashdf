@@ -26,6 +26,8 @@ export function ReservationForm() {
   }
 
   return <form className="booking" onSubmit={handleSubmit}>
+    <label><span>Nom, prénom ou société</span><input name="client" placeholder="Comment vous appeler ?" autoComplete="name" required /></label>
+    <label><span>Téléphone ou e-mail</span><input name="contact" placeholder="Pour vous recontacter" autoComplete="tel" required /></label>
     <label><span>Départ</span><input name="depart" placeholder="Votre adresse" autoComplete="street-address" required /></label>
     <label><span>Destination</span><input name="destination" placeholder="Où allez-vous ?" required /></label>
     <label><span>Date</span><input name="date" type="date" required /></label>
