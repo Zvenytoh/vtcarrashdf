@@ -41,7 +41,7 @@ export default function Home() {
         <p className="eyebrow">Chauffeur privé · Arras & Hauts-de-France</p>
         <h1>Le voyage commence<br />avant la destination.</h1>
         <p className="lead">Chauffeur privé à Arras pour vos transferts gares et aéroports, déplacements professionnels, privés et événementiels.</p>
-        <div className="hero-actions"><a className="button button-light" href="#reservation">Réserver un trajet <i>↗</i></a><a className="text-link" href={`mailto:${email}?subject=Demande%20de%20devis`}>Demander un devis <i>↗</i></a></div>
+        <div className="hero-actions"><a className="button button-light" href="#reservation">Réserver un trajet <i>↗</i></a></div>
         <div className="hero-proof"><a href="#avis" aria-label="Lire les avis clients">★★★★★ <span>Avis clients</span></a><span>Disponible 24h/24 sur réservation</span><span>Arras · Hauts-de-France · Aéroports parisiens</span></div>
       </div>
       <a className="scroll-cue" href="#promesse">Découvrir <span>↓</span></a>
